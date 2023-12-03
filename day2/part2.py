@@ -1,7 +1,7 @@
 sum = 0
 
 with open('input.txt', 'r') as input:
-    for index, line in enumerate(input):
+    for line in input:
         line_split = line.split(": ")[1].replace(";", ",").split(", ")
         highest_red = None
         highest_green = None
